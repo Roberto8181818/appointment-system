@@ -13,17 +13,44 @@ Sistema simplificado para el agendamiento de citas médicas en una clínica
 
 ### 1. Clonar el repositorio
 
-- git clone https://github.com/Roberto8181818/appointment-system.git
+- ```bash
+  git clone https://github.com/Roberto8181818/appointment-system.git
+  
 - Abrir la solución en Visual Studio **Abrir el archivo .sln del proyecto.**
 
 ### 3. Configuración de la base de datos
 
-El proyecto utiliza Entity Framework y requiere la base de datos ClinicaDB. Para configurarla en tu máquina:
-Conéctate a tu servidor SQL local usando SQL Server Management Studio y colocando **SERVER NAME = LOCALHOST, AUTHENTICATION = WINDOWS AUTHENTICATION**, ACTIVANDO EL CHECK **TRUST SERVER CERTIFICATE**.
-Abre el script ClinicaDB.sql en SQL Server Management Studio y pulsa Execute. Esto creará la base de datos con la misma estructura que utilicé.
+Este proyecto utiliza Entity Framework y requiere la base de datos ClinicaDB.
 
-Verifica que la cadena de conexión en App.config o Web.config apunte a tu servidor local (data source=TU_SERVIDOR_LOCAL).
-Si usas el mismo nombre de servidor que en el proyecto original (localhost), no se necesita cambiar nada.
+Para configurarla en tu máquina local, sigue estos pasos:
+
+- Conéctate a tu servidor SQL local usando SQL Server Management Studio (SSMS) con los siguientes datos:
+
+  - Server Name: localhost
+
+  - Authentication: Windows Authentication
+
+  - Trust Server Certificate: Activar el check
+
+- Ejecuta el script de la base de datos:
+
+  - Abre el archivo ClinicaDB.sql en SQL Server Management Studio.
+
+  - Pulsa Execute.
+
+  - Esto creará la base de datos con la misma estructura que utilicé en el proyecto.
+
+- Verifica la cadena de conexión:
+
+  - Abre App.config o Web.config.
+
+  - Asegúrate de que la propiedad connectionString apunte a tu servidor local:
+```bash
+<connectionStrings>
+  <add name="ClinicaDBEntities" connectionString="metadata=res://*/ClinicaModel.csdl|res://*/ClinicaModel.ssdl|res://*/ClinicaModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=ClinicaDB;integrated security=True;trustservercertificate=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" providerName="System.Data.EntityClient" />
+</connectionStrings>
+```
+Si usas el mismo nombre de servidor (localhost) que en el proyecto original, no necesitas cambiar nada.
 
 5. Restaurar paquetes NuGet
 En Visual Studio, haz clic derecho sobre la solución → Restore NuGet Packages.
@@ -38,6 +65,7 @@ En la página Listado de citas se pueden observar todas las citas registradas en
 
 Desde la página de listado se puede navegar a la página de agendamiendo dando click en "Agendar cita", una vez ahí se deben diligenciar los datos requeridos y clickear "Guardar Cita" si los datos fueron proporcionados correctamente se agendará la cita y se redirigirá al listado de citas
 
-### Autor
+### 5. Autor
+
 Roberto Padilla Mendoza
 [robertopadillapadilla9@gmail.com] | [+57 301 4315902] 
