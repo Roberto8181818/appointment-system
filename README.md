@@ -15,8 +15,9 @@ Sistema simplificado para el agendamiento de citas médicas en una clínica
 
 git clone https://github.com/Roberto8181818/appointment-system.git <br>
 cd appointment-system
-
-2. Abrir la solución en Visual Studio
+<br>
+2. Abrir la solución en Visual Studio 
+<br>
 Abrir el archivo .sln del proyecto.
 
 # 3. Configuración de la base de datos
