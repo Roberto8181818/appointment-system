@@ -22,7 +22,11 @@
         <asp:GridView ID="gvCitas" runat="server" AutoGenerateColumns="False"
             OnRowDataBound="gvCitas_RowDataBound"
             OnRowCommand="gvCitas_RowCommand"
-            CssClass="table table-striped table-bordered">
+            CssClass="table table-striped table-bordered"
+            OnPageIndexChanging="gvCitas_PageIndexChanging"
+            AllowPaging="True"
+            PageSize="10">
+            
             <Columns>
                 <asp:BoundField DataField="Paciente" HeaderText="Paciente" />
                 <asp:BoundField DataField="Doctor" HeaderText="Doctor" />
@@ -36,6 +40,8 @@
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
+            <PagerSettings Position="Top" />
+            <PagerStyle Font-Bold="True" Font-Size="XX-Large" />
         </asp:GridView>
     </form>
 </body>

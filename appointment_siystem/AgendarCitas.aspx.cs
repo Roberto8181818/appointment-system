@@ -33,12 +33,14 @@ namespace appointment_siystem
                 var doctores = db.Doctor
                     .Select(c => new
                     {
-                        Id = c.Id,
-                        nombreCompleto = c.Nombre + " " + c.Apellido
+                        c.Id,
+                        nombreYespecialidad = c.Nombre + " " + c.Apellido + " - " + c.Especialidad,
+                        c.Especialidad
+
                     }).ToList();
 
                 ddlDoctor.DataSource = doctores;
-                ddlDoctor.DataTextField = "nombreCompleto";
+                ddlDoctor.DataTextField = "nombreYespecialidad";
                 ddlDoctor.DataValueField = "Id";
                 ddlDoctor.DataBind();
                 ddlDoctor.Items.Insert(0, new ListItem("Selecciona un doctor", ""));
@@ -51,7 +53,7 @@ namespace appointment_siystem
                 var pacientes = db.Paciente
                     .Select(c => new
                     {
-                        Id = c.Id,
+                        c.Id,
                         nombreCompleto = c.Nombre + " " + c.Apellido
                     }).ToList();
 

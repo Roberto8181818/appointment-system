@@ -25,8 +25,15 @@ namespace appointment_siystem
                     .OrderBy(c => c.FechaHora)
                     .ToList();
 
-                gvCitas.DataSource = citas;
-                gvCitas.DataBind();
+                    if (citas.Count == 0)
+                    {
+                        lblMensaje.Text = "No hay citas agendadas.";
+                    }
+                    else
+                    {
+                        gvCitas.DataSource = citas;
+                        gvCitas.DataBind();
+                    }
             }
         }
 
@@ -85,10 +92,14 @@ namespace appointment_siystem
                 btnCancelar.Visible = (estado == "Programada");
             }
         }
+        protected void gvCitas_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            gvCitas.PageIndex = e.NewPageIndex;
+            CargarCitas();
+        }
         protected void btnRefresh_Click(object sender, EventArgs e)
         {
             CargarCitas();
-            lblMensaje.Text = "Citas cargadas";
         }
     }
 }

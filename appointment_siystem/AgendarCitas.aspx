@@ -22,27 +22,27 @@
         <div class="mb-3">
             <asp:Label ID="lblDoctor" runat="server" Text="Doctor" CssClass="form-label"></asp:Label>
             <asp:DropDownList ID="ddlDoctor" runat="server" CssClass="form-select"></asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvDoctor" runat="server" ControlToValidate="ddlDoctor" InitialValue="" Text="*" ForeColor="red" CssClass="form-text text-danger" />
+            <asp:RequiredFieldValidator ID="rfvDoctor" runat="server" ControlToValidate="ddlDoctor" InitialValue="" Text="Seleccione un doctor" ForeColor="red" CssClass="form-text text-danger" />
         </div>
 
         <div class="mb-3">
             <asp:Label ID="lblPaciente" runat="server" Text="Paciente" CssClass="form-label"></asp:Label>
             <asp:DropDownList ID="ddlPaciente" runat="server" CssClass="form-select"></asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvPaciente" runat="server" ControlToValidate="ddlPaciente" InitialValue="" Text="*" ForeColor="red" CssClass="form-text text-danger" />
+            <asp:RequiredFieldValidator ID="rfvPaciente" runat="server" ControlToValidate="ddlPaciente" InitialValue="" Text="Seleccione un paciente" ForeColor="red" CssClass="form-text text-danger" />
         </div>
 
         <div class="mb-3">
             <asp:Label ID="lblFecha" runat="server" Text="Fecha" CssClass="form-label"></asp:Label>
             <asp:TextBox ID="txtFecha" runat="server" CssClass="form-control" />
             <ajaxToolkit:CalendarExtender ID="calFecha" runat="server" TargetControlID="txtFecha" Format="yyyy-MM-dd" />
-            <asp:RequiredFieldValidator ID="rfvFecha" runat="server" ControlToValidate="txtFecha" Text="*" ForeColor="red" CssClass="form-text text-danger" />
+            <asp:RequiredFieldValidator ID="rfvFecha" runat="server" ControlToValidate="txtFecha" Text="Seleccione una fecha" ForeColor="red" CssClass="form-text text-danger" />
             <asp:CompareValidator ID="cvFecha" runat="server" ControlToValidate="txtFecha" Operator="DataTypeCheck" Type="Date" ErrorMessage="La fecha no es válida." ForeColor="Red" CssClass="form-text text-danger" />
         </div>
 
         <div class="mb-3">
             <asp:Label ID="lblHora" runat="server" Text="Hora" CssClass="form-label"></asp:Label>
             <asp:DropDownList ID="ddlHora" runat="server" CssClass="form-select"></asp:DropDownList>
-            <asp:RequiredFieldValidator ID="rfvHora" runat="server" ControlToValidate="ddlHora" InitialValue="" Text="*" ForeColor="red" CssClass="form-text text-danger" />
+            <asp:RequiredFieldValidator ID="rfvHora" runat="server" ControlToValidate="ddlHora" InitialValue="" Text="Seleccione una hora" ForeColor="red" CssClass="form-text text-danger" />
         </div>
 
         <div class="mb-3">
@@ -58,7 +58,7 @@
             <asp:Button ID="btnGuardarCita" runat="server" OnClick="btnGuardarCita_Click" Text="Guardar Cita" CausesValidation="true" CssClass="btn btn-primary" />
         </div>
 
-        <asp:Label ID="lblError" runat="server" ForeColor="Red" CssClass="form-text text-danger"></asp:Label>
+        <asp:Label ID="lblError" runat="server" ForeColor="Red" CssClass="form-text text-danger" Font-Size="Large"></asp:Label>
     </form>
 </body>
 </html>
