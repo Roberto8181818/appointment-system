@@ -168,6 +168,15 @@ namespace appointment_siystem
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHora;
 
         /// <summary>
+        /// Control lblMotivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMotivo;
+
+        /// <summary>
         /// Control txtMotivo.
         /// </summary>
         /// <remarks>
