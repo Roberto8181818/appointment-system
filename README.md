@@ -24,7 +24,7 @@ Abrir el archivo .sln del proyecto.
 
 El proyecto utiliza Entity Framework y requiere la base de datos ClinicaDB. Para configurarla en tu máquina:
 Conéctate a tu servidor SQL local usando SQL Server Management Studio y colocando **SERVER NAME = LOCALHOST, AUTHENTICATION = WINDOWS AUTHENTICATION**, ACTIVANDO EL CHECK **TRUST SERVER CERTIFICATE**.
-Ejecuta el script ClinicaDB.sql que se incluye en el repositorio. Esto creará la base de datos con la misma estructura que usamos.
+Ejecuta el script ClinicaDB.sql. Esto creará la base de datos con la misma estructura que usamos.
 
 Verifica que la cadena de conexión en App.config o Web.config apunte a tu servidor local (data source=TU_SERVIDOR_LOCAL).
 Si usas el mismo nombre de servidor que en el proyecto original (localhost), no se necesita cambiar nada.
