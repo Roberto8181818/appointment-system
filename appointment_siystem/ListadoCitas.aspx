@@ -12,13 +12,17 @@
         <h1 style="text-align: center; margin-top: 20px;">Listado de Citas
         </h1>
 
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AgendarCitas.aspx">Agendar cita</asp:HyperLink>
+        </p>
+
         <asp:Button ID="btnRefresh" runat="server" Text="Recargar" OnClick="btnRefresh_Click" />
         <br />
         <asp:GridView ID="gvCitas" runat="server" AutoGenerateColumns="False" OnRowDataBound="gvCitas_RowDataBound" OnRowCommand="gvCitas_RowCommand">
             <Columns>
                 <asp:BoundField DataField="Paciente" HeaderText="Paciente" />
                 <asp:BoundField DataField="Doctor" HeaderText="Doctor" />
-                <asp:BoundField DataField="FechaHora" HeaderText="Fecha" />
+                <asp:BoundField DataField="FechaHora" HeaderText="Fecha y hora" />
                 <asp:BoundField DataField="Estado" HeaderText="Estado" />
                 <asp:TemplateField HeaderText="Acciones">
                     <ItemTemplate>

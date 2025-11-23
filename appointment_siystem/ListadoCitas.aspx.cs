@@ -63,7 +63,6 @@ namespace appointment_siystem
             }
             CargarCitas();
             lblMensaje.Text = "La cita fue cancelada correctamente.";
-            Response.Redirect(Request.RawUrl, false);
         }
         protected void gvCitas_RowCommand(object sender, GridViewCommandEventArgs e)
         {
