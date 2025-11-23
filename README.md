@@ -13,12 +13,12 @@ Sistema simplificado para el agendamiento de citas médicas en una clínica
 
 # 1. Clonar el repositorio
 
-git clone https://github.com/Roberto8181818/appointment-system.git <br>
-cd appointment-system
+- git clone https://github.com/Roberto8181818/appointment-system.git
+- cd appointment-system
 <br>
-2. Abrir la solución en Visual Studio 
 <br>
-Abrir el archivo .sln del proyecto.
+- Abrir la solución en Visual Studio 
+- Abrir el archivo .sln del proyecto.
 
 # 3. Configuración de la base de datos
 
@@ -37,7 +37,7 @@ Presiona F5 o Ctrl+F5 para iniciar la aplicación.
 
 La aplicación se abrirá en el navegador predeterminado.
 
-# Uso
+# 4. Uso
 En la página Listado de citas se pueden observar todas las citas registradas en la base de datos, a su vez se pueden cancelar las citas programadas dando click en "Cancelar" al lado de la cita que se desea cancelar (siempre que tenga 24h de antelación)
 
 Desde la página de listado se puede navegar a la página de agendamiendo dando click en "Agendar cita", una vez ahí se deben diligenciar los datos requeridos y clickear "Guardar Cita" si los datos fueron proporcionados correctamente se agendará la cita y se redirigirá al listado de citas
