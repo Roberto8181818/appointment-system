@@ -1,15 +1,15 @@
-# Prueba Técnica: Sistema de Agendamiento de Citas (ASP.NET Web Forms)
+## Prueba Técnica: Sistema de Agendamiento de Citas (ASP.NET Web Forms)
 
 Sistema simplificado para el agendamiento de citas médicas en una clínica
 
-# Requisitos
+## Requisitos
 
 - Visual Studio 2022 con soporte para ASP.NET
 - SQL Server Developer o Express
 - .NET Framework 4.8.1
 - (Opcional) SQL Server Management Studio (SSMS) para administrar la base de datos
 
-# Instalación
+## Instalación
 
 # 1. Clonar el repositorio
 
