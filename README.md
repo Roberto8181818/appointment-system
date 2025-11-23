@@ -1,4 +1,4 @@
-## Prueba Técnica: Sistema de Agendamiento de Citas (ASP.NET Web Forms)
+# Prueba Técnica: Sistema de Agendamiento de Citas (ASP.NET Web Forms)
 
 Sistema simplificado para el agendamiento de citas médicas en una clínica
 
@@ -11,12 +11,12 @@ Sistema simplificado para el agendamiento de citas médicas en una clínica
 
 ## Instalación
 
-# 1. Clonar el repositorio
+### 1. Clonar el repositorio
 
 - git clone https://github.com/Roberto8181818/appointment-system.git
 - Abrir la solución en Visual Studio **Abrir el archivo .sln del proyecto.**
 
-# 3. Configuración de la base de datos
+### 3. Configuración de la base de datos
 
 El proyecto utiliza Entity Framework y requiere la base de datos ClinicaDB. Para configurarla en tu máquina:
 Conéctate a tu servidor SQL local usando SQL Server Management Studio y colocando **SERVER NAME = LOCALHOST, AUTHENTICATION = WINDOWS AUTHENTICATION**, ACTIVANDO EL CHECK **TRUST SERVER CERTIFICATE**.
@@ -33,11 +33,11 @@ Presiona F5 o Ctrl+F5 para iniciar la aplicación.
 
 La aplicación se abrirá en el navegador predeterminado.
 
-# 4. Uso
+### 4. Uso
 En la página Listado de citas se pueden observar todas las citas registradas en la base de datos, a su vez se pueden cancelar las citas programadas dando click en "Cancelar" al lado de la cita que se desea cancelar (siempre que tenga 24h de antelación)
 
 Desde la página de listado se puede navegar a la página de agendamiendo dando click en "Agendar cita", una vez ahí se deben diligenciar los datos requeridos y clickear "Guardar Cita" si los datos fueron proporcionados correctamente se agendará la cita y se redirigirá al listado de citas
 
-# Autor
+### Autor
 Roberto Padilla Mendoza
 [robertopadillapadilla9@gmail.com] | [+57 301 4315902] 
